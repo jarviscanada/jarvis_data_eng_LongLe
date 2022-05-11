@@ -44,6 +44,7 @@ GROUP BY
   b.total_mem;
 
 --3.Detect host failure
+-- If there are less than 3 data points in 1 interval, print it out
 SELECT
   host_id,
   round5(timestamp) as five_min_interval,
