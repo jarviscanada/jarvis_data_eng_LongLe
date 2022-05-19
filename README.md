@@ -1,6 +1,6 @@
 # Hoang Long Le . Jarvis Consulting
 
-I graduated with a Computer Science Technology DEC (a 3-year college diploma in Montreal) in Vanier College. I'm originally an international student from Vietnam, coming to Montreal for College. Like many other computer science students, I have had a lot of passion about video games since I were young. I have also been really curios in learning about how things work and interact with each other. Moreover, I really loves math. Nothing can describe the satisfaction when you are stuck on a problem for hours, and suddenly, you understand the solution and are able to solve it. Maybe this is the reason why I decided to pursue a degree in Computer Science.
+I graduated with a Computer Science Technology DEC (a 3-year college diploma in Montreal) in Vanier College. I'm originally an international student from Vietnam, coming to Montreal for College. Like many other computer science students, I have had a lot of passion about video games since I were young. I have also been really curious in learning about how things work and interact with each other. Moreover, I really loves math. Nothing can describe the satisfaction when you are stuck on a problem for hours, and suddenly, you understand the solution and are able to solve it. Maybe this is the reason why I decided to pursue a degree in Computer Science.
 
 ## Skills
 
