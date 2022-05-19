@@ -48,4 +48,8 @@ The database, ``` host_agent ```, consists of 2 different tables: ``` host_info 
 ## Improvements
 For now, as my skill are lacking, I haven't see anything particular that I can improve. But in the future, if there is someone better like another programmer, or a seniore developer, or a future boss, or myself (lol) that can show me some improvements, I would be very greatful
 =======
+<<<<<<< HEAD
 >>>>>>> b35f28b5d662d3bd0838e31dc35d49b3bb183125
+=======
+>>>>>>> master
+>>>>>>> develop
