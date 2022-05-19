@@ -1,0 +1,110 @@
+{
+  "education": [
+    {
+      "awards_achievements": null,
+      "degree": "Diplôme d'études collégiales - Diploma of College Studies",
+      "department": "Computer Science Technology",
+      "duration": "2018-2021",
+      "school_name": "Vanier College"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_LongLe",
+  "highlighted_projects": [
+    {
+      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "git_url": "https://github.com/jarviscanada/jarvis_profile_builder",
+      "name": "Web app for resturant"
+    },
+    {
+      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "git_url": null,
+      "name": "Machine Learning"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Developed 2 SQL queries to create tables in the database (if they haven't exist yet) and inserted some sample values to test them. Then I coded 3 bash scripts. Two bash scripts are able to capture system hardware specifications, and resource usage into the database.  The other bash script is used to create a PostgreSQL database docker container.",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    },
+    {
+      "description": [
+        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
+        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
+        "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      ],
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    },
+    {
+      "description": "",
+      "git_url": "/springboot",
+      "name": "Springboot App"
+    },
+    {
+      "description": "",
+      "git_url": "/python_data_anlytics",
+      "name": "Python Data Analytics"
+    },
+    {
+      "description": "",
+      "git_url": "/hadoop",
+      "name": "Hadoop"
+    },
+    {
+      "description": "",
+      "git_url": "/spark",
+      "name": "Spark"
+    },
+    {
+      "description": "",
+      "git_url": "/cloud_devops",
+      "name": "Cloud/DevOps"
+    }
+  ],
+  "name": "Hoang Long Le",
+  "others": [
+    {
+      "bullets": [
+        "Professional Swimmer in 2008",
+        "Volunteer, Vietnam Hagiang 2017: Helping poor people in mountainous area in Ha Giang, Vietnam"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
+      "duration": "2020-present",
+      "title": "Software Developer"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "PHP",
+      "C#",
+      "Python",
+      "Docker",
+      "Maven"
+    ],
+    "familiar": [
+      "Python",
+      "Scala",
+      "React",
+      "Vue",
+      "Spark"
+    ],
+    "proficient": [
+      "Java",
+      "Linux/Bash",
+      "RDBMS/SQL",
+      "Agile/Scrum",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Oracle"
+    ]
+  },
+  "summary": "I graduated with a Computer Science Technology DEC (a 3-year college diploma in Montreal) in Vanier College. I'm originally an international student from Vietnam, coming to Montreal for College. Like many other computer science students, I have had a lot of passion about video games since I were young. I have also been really curios in learning about how things work and interact with each other. Moreover, I really loves math. Nothing can describe the satisfaction when you are stuck on a problem for hours, and suddenly, you understand the solution and are able to solve it. Maybe this is the reason why I decided to pursue a degree in Computer Science."
+}
