@@ -1,7 +1,5 @@
 package ca.jrvs.apps.grep;
 
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -13,6 +11,9 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.log4j.BasicConfigurator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class JavaGrepImp implements JavaGrep {
 
@@ -54,8 +55,18 @@ public class JavaGrepImp implements JavaGrep {
 
   @Override
   public void process() throws IOException {
+    List<String> lines = new ArrayList<>();
 
+    for (File file : listFiles(rootPath)) {
+      for (String line : readLines(file)) {
+        if (containsPattern(line)) {
+          lines.add(file.getName() + ": " + line);
+        }
+      }
+    }
+    writeToFile(lines);
   }
+
 
   @Override
   public List<File> listFiles(String rootDir) {
@@ -65,26 +76,33 @@ public class JavaGrepImp implements JavaGrep {
     File[] list = filePath.listFiles();
     List<File> allFile = new ArrayList<>();
 
-    if (allFile == null) {
-      return null;
-    }
+//    for (File file : list) {
+//      //There are directories and files in this. So we need to check if File file is a directory or a fiel
+//      //If it's a file
+//      if (file.isFile()) {
+//        allFile.add(file);
+//      }
+//      //If it's a diretory
+//      else {
+//        allFile.addAll(listFiles(file.getAbsolutePath()));
+//      }
+//    }
+//    return allFile;
 
-    for (File file : list) {
-      //There are directories and files in this. So we need to check if File file is a directory or a fiel
-      //If it's a file
-      if (file.isFile()) {
-        allFile.add(file);
-      }
-      //If it's a diretory
-      else {
-        allFile.addAll(listFiles(file.getAbsolutePath()));
+    if (filePath.isDirectory()) {
+      for (File file : list) {
+        if (file.isFile()) {
+          allFile.add(file);
+        } else if (file.isDirectory()) {
+          allFile.addAll(listFiles(file.getAbsolutePath()));
+        }
       }
     }
     return allFile;
   }
 
   @Override
-  public List<String> reaLines(File inputFile) {
+  public List<String> readLines(File inputFile) {
     List<String> allLines = new ArrayList<>();
 
     /*
@@ -127,6 +145,8 @@ public class JavaGrepImp implements JavaGrep {
     }
 
     //Use default logger config
+    BasicConfigurator.configure();
+
     JavaGrepImp javaGrepImp = new JavaGrepImp();
     javaGrepImp.setRegex(args[0]);
     javaGrepImp.setRootPath(args[1]);

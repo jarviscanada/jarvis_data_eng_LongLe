@@ -11,7 +11,7 @@ public interface RegexEsc {
    * @param filename
    * @return
    */
-  public boolean matchJpeg(String filename);
+  boolean matchJpeg(String filename);
 
   /**
    * return true if ip is valid
@@ -19,7 +19,7 @@ public interface RegexEsc {
    * @param ip
    * @return
    */
-  public boolean matchIp(String ip);
+  boolean matchIp(String ip);
 
   /**
    * return true if line is empty (e.g empty, white space, tabs, etc..)
@@ -27,5 +27,5 @@ public interface RegexEsc {
    * @param line
    * @return
    */
-  public boolean isEmptyLine(String line);
+  boolean isEmptyLine(String line);
 }
