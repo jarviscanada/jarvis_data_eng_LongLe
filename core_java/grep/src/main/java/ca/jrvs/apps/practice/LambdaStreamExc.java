@@ -37,7 +37,7 @@ public interface LambdaStreamExc {
    * @param pattern
    * @return
    */
-  Stream<String> fileter(Stream<String> stringStream, String pattern);
+  Stream<String> filter(Stream<String> stringStream, String pattern);
 
   /**
    * Create a intStream from a arr[]
