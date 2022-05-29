@@ -27,7 +27,7 @@ public class RegexEscImp implements RegexEsc {
   }
 
   //Testing Java Regex
-  public static void main(String args[]) {
+  public static void main(String[] args) {
 
     RegexEscImp test = new RegexEscImp();
 
