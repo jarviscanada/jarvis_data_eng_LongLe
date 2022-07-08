@@ -57,8 +57,8 @@ public class TwitterDAO implements CrdDao<Tweet, String> {
 
   private URI getPostUri(Tweet tweet) throws URISyntaxException {
     String status = tweet.getText();
-    float longitude = tweet.getLocation().getCoordinates()[0];
-    float lat = tweet.getLocation().getCoordinates()[1];
+    double longitude = tweet.getLocation().getCoordinates().get(0);
+    double lat = tweet.getLocation().getCoordinates().get(1);
     PercentEscaper percentEscaper = new PercentEscaper("", false);
     URI uri = new URI(API_BASE_URI + POST_PATH + QUERY_SYM + "status" + EQUAL +
         percentEscaper.escape(status) + AMPERSAND + "long" + EQUAL + longitude +

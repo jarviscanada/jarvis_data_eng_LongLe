@@ -1,24 +1,26 @@
 package ca.jrvs.apps.twitter.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import java.util.List;
+import java.util.function.DoubleToLongFunction;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Coordinates {
-  //@JsonProperty(name), tells Jackson ObjectMapper to map the JSON property name to the annotated Java field's name.
+
   @JsonProperty("coordinates")
-  private float[] coordinates;
+  private List<Double> coordinatesTweet;
+
   @JsonProperty("type")
   private String type;
 
-  //Default Constructor
-  public Coordinates() {
+  public List<Double> getCoordinates() {
+    return coordinatesTweet;
   }
 
-  public float[] getCoordinates() {
-    return coordinates;
-  }
-
-  public void setCoordinates(float[] coordinates) {
-    this.coordinates = coordinates;
+  public void setCoordinates(List<Double> coordinatesTweet) {
+    this.coordinatesTweet = coordinatesTweet;
   }
 
   public String getType() {
