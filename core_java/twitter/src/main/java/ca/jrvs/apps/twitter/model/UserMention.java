@@ -1,24 +1,27 @@
 package ca.jrvs.apps.twitter.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import java.util.List;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class UserMention {
-  //@JsonProperty(name), tells Jackson ObjectMapper to map the JSON property name to the annotated Java field's name.
+
   @JsonProperty("id")
   private long id;
+
   @JsonProperty("id_str")
-  private String idStr;
+  private String id_str;
+
   @JsonProperty("indices")
-  private int[] indices;
+  private List<Integer> indices;
+
   @JsonProperty("name")
   private String name;
+
   @JsonProperty("screen_name")
-  private String screenName;
-
-  //Default Constructor
-  public UserMention() {
-
-  }
+  private String screen_name;
 
   public long getId() {
     return id;
@@ -28,19 +31,19 @@ public class UserMention {
     this.id = id;
   }
 
-  public String getIdStr() {
-    return idStr;
+  public String getId_str() {
+    return id_str;
   }
 
-  public void setIdStr(String idStr) {
-    this.idStr = idStr;
+  public void setId_str(String id_str) {
+    this.id_str = id_str;
   }
 
-  public int[] getIndices() {
+  public List<Integer> getIndices() {
     return indices;
   }
 
-  public void setIndices(int[] indices) {
+  public void setIndices(List<Integer> indices) {
     this.indices = indices;
   }
 
@@ -52,11 +55,11 @@ public class UserMention {
     this.name = name;
   }
 
-  public String getScreenName() {
-    return screenName;
+  public String getScreen_name() {
+    return screen_name;
   }
 
-  public void setScreenName(String screenName) {
-    this.screenName = screenName;
+  public void setScreen_name(String screen_name) {
+    this.screen_name = screen_name;
   }
 }

@@ -1,23 +1,24 @@
 package ca.jrvs.apps.twitter.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import java.util.List;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Hashtag {
-  //@JsonProperty(name), tells Jackson ObjectMapper to map the JSON property name to the annotated Java field's name.
+
   @JsonProperty("indices")
-  private int[] indices;
+  private List<Integer> indices;
+
   @JsonProperty("text")
   private String text;
 
-  //Default Constructor
-  public Hashtag() {
-  }
-
-  public int[] getIndices() {
+  public List<Integer> getIndices() {
     return indices;
   }
 
-  public void setIndices(int[] indices) {
+  public void setIndices(List<Integer> indices) {
     this.indices = indices;
   }
 

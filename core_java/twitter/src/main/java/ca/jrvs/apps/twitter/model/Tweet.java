@@ -1,58 +1,83 @@
 package ca.jrvs.apps.twitter.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonPropertyOrder({
+    "created_at",
+    "id",
+    "id_str",
+    "text",
+    "source",
+    "coordinates",
+    "entities",
+    "retweet_count",
+    "favorite_count",
+    "favorited",
+    "retweeted",
+})
 public class Tweet {
 
-  //@JsonProperty(name), tells Jackson ObjectMapper to map the JSON property name to the annotated Java field's name.
   @JsonProperty("created_at")
-  private String createdAt;
+  private String createdTime;
+
   @JsonProperty("id")
-  private long id;
+  private Long id;
+
   @JsonProperty("id_str")
-  private String idStr;
+  private String id_str;
+
   @JsonProperty("text")
   private String text;
-  @JsonProperty("entities")
-  private Entities entities;
+
+  @JsonProperty("source")
+  private String source;
+
   @JsonProperty("coordinates")
-  private Coordinates location;
+  private Coordinates coordinates;
+
+  @JsonProperty("entities")
+  private Entities entities = null;
+
   @JsonProperty("retweet_count")
-  private int retweets;
+  private Integer retweetCount;
+
   @JsonProperty("favorite_count")
-  private int favorites;
+  private Integer favoriteCount;
+
   @JsonProperty("favorited")
-  private boolean favorited;
+  private Boolean favorited;
+
   @JsonProperty("retweeted")
-  private boolean retweeted;
+  private Boolean retweeted;
 
-  //Default constructor
-  public Tweet() {
-
+  public String getCreatedTime() {
+    return createdTime;
   }
 
-  public String getCreatedAt() {
-    return createdAt;
+  public void setCreatedTime(String createdTime) {
+    this.createdTime = createdTime;
   }
 
-  public void setCreatedAt(String createdAt) {
-    this.createdAt = createdAt;
-  }
-
-  public long getId() {
+  public Long getId() {
     return id;
   }
 
-  public void setId(long id) {
+  public void setId(Long id) {
     this.id = id;
   }
 
-  public String getIdStr() {
-    return idStr;
+  public String getId_str() {
+    return id_str;
   }
 
-  public void setIdStr(String idStr) {
-    this.idStr = idStr;
+  public void setId_str(String id_str) {
+    this.id_str = id_str;
   }
 
   public String getText() {
@@ -63,6 +88,22 @@ public class Tweet {
     this.text = text;
   }
 
+  public String getSource() {
+    return source;
+  }
+
+  public void setSource(String source) {
+    this.source = source;
+  }
+
+  public Coordinates getCoordinates() {
+    return coordinates;
+  }
+
+  public void setCoordinates(Coordinates coordinates) {
+    this.coordinates = coordinates;
+  }
+
   public Entities getEntities() {
     return entities;
   }
@@ -71,59 +112,35 @@ public class Tweet {
     this.entities = entities;
   }
 
-  public Coordinates getLocation() {
-    return location;
+  public Integer getRetweetCount() {
+    return retweetCount;
   }
 
-  public void setLocation(Coordinates location) {
-    this.location = location;
+  public void setRetweetCount(Integer retweetCount) {
+    this.retweetCount = retweetCount;
   }
 
-  public int getRetweets() {
-    return retweets;
+  public Integer getFavoriteCount() {
+    return favoriteCount;
   }
 
-  public void setRetweets(int retweets) {
-    this.retweets = retweets;
+  public void setFavoriteCount(Integer favoriteCount) {
+    this.favoriteCount = favoriteCount;
   }
 
-  public int getFavorites() {
-    return favorites;
-  }
-
-  public void setFavorites(int favorites) {
-    this.favorites = favorites;
-  }
-
-  public boolean isFavorited() {
+  public Boolean getFavorited() {
     return favorited;
   }
 
-  public void setFavorited(boolean favorited) {
+  public void setFavorited(Boolean favorited) {
     this.favorited = favorited;
   }
 
-  public boolean isRetweeted() {
+  public Boolean getRetweeted() {
     return retweeted;
   }
 
-  public void setRetweeted(boolean retweeted) {
+  public void setRetweeted(Boolean retweeted) {
     this.retweeted = retweeted;
-  }
-
-  @Override
-  public String toString() {
-    return "Tweet{"
-        + "createdAt='" + createdAt + '\''
-        + ", id=" + id
-        + ", idStr='" + idStr + '\''
-        + ", text='" + text + '\''
-        + ", entities=" + entities
-        + ", location=" + location
-        + ", retweets=" + retweets
-        + ", favorites=" + favorites
-        + ", favorited=" + favorited
-        + ", retweeted=" + retweeted
-        + '}';
   }
 }

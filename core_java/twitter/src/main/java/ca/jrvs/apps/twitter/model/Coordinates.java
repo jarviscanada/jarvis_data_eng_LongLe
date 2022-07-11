@@ -2,9 +2,7 @@ package ca.jrvs.apps.twitter.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import java.util.List;
-import java.util.function.DoubleToLongFunction;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Coordinates {
@@ -15,11 +13,11 @@ public class Coordinates {
   @JsonProperty("type")
   private String type;
 
-  public List<Double> getCoordinates() {
+  public List<Double> getCoordinatesTweet() {
     return coordinatesTweet;
   }
 
-  public void setCoordinates(List<Double> coordinatesTweet) {
+  public void setCoordinatesTweet(List<Double> coordinatesTweet) {
     this.coordinatesTweet = coordinatesTweet;
   }
 

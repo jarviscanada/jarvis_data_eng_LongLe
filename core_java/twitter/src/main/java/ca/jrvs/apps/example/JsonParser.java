@@ -21,6 +21,7 @@ public class JsonParser {
   public static String toJson(Object object, boolean prettyJson, boolean includeNullValues)
       throws JsonProcessingException {
     ObjectMapper m = new ObjectMapper();
+    m.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
     if (!includeNullValues) {
       m.setSerializationInclusion(Include.NON_NULL);
     }
@@ -32,6 +33,7 @@ public class JsonParser {
 
   public static <T> T toObjectFromJson(String json, Class clazz) throws IOException {
     ObjectMapper m = new ObjectMapper();
+    m.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 //   m.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES,false);
     return (T) m.readValue(json, clazz);
   }
