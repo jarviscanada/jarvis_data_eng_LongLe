@@ -21,18 +21,19 @@ public class TwitterCLIApp {
   private Controller controller;
 
   @Autowired
-  public TwitterCLIApp(Controller controller){
+  public TwitterCLIApp(Controller controller) {
     this.controller = controller;
   }
 
   public static void main(String[] args) {
-    String consumerKey= System.getenv("consumerKey");
+    String consumerKey = System.getenv("consumerKey");
     String consumerSecret = System.getenv("consumerSecret");
     String accessToken = System.getenv("accessToken");
     String tokenSecret = System.getenv("tokenSecret");
 
     // setting up the controller
-    HttpHelper httpHelper = new TwitterHTTPHelper(consumerKey, consumerSecret, accessToken,tokenSecret);
+    HttpHelper httpHelper = new TwitterHTTPHelper(consumerKey, consumerSecret, accessToken,
+        tokenSecret);
     CrdDao dao = new TwitterDAO(httpHelper);
     TwitterService twitterService = new TwitterService(dao);
     Controller controller = new TwitterController(twitterService);
@@ -42,10 +43,10 @@ public class TwitterCLIApp {
   }
 
   public void run(String[] args) {
-    if (args.length == 0){
+    if (args.length == 0) {
       throw new IllegalArgumentException("USAGE: Please enter 3 arguments.");
     }
-    switch (args[0].toLowerCase()){
+    switch (args[0].toLowerCase()) {
       case "post":
         printTweet(controller.postTweet(args));
         break;
@@ -62,11 +63,11 @@ public class TwitterCLIApp {
     }
   }
 
-  private void printTweet(Tweet tweet){
-    try{
-      System.out.println(JsonParser.toJson(tweet,true, false));
+  private void printTweet(Tweet tweet) {
+    try {
+      System.out.println(JsonParser.toJson(tweet, true, false));
     } catch (JsonProcessingException e) {
-      throw new RuntimeException("Error: Failed to convert from tweet object to Json. ",  e);
+      throw new RuntimeException("Error: Failed to convert from tweet object to Json. ", e);
     }
   }
 
