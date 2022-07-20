@@ -22,6 +22,7 @@ public class TwitterCLISpringBoot implements CommandLineRunner {
     app.setWebApplicationType(WebApplicationType.NONE);
     app.run(args);
   }
+
   @Override
   public void run(String... args) throws Exception {
     app.run(args);

@@ -32,6 +32,19 @@ public class TwitterHTTPHelper implements HttpHelper {
     httpClient = new DefaultHttpClient();
   }
 
+  //Default Constructor
+  public TwitterHTTPHelper()
+  {
+    String consumerKey = System.getenv("consumerKey");
+    String consumerSecret = System.getenv("consumerSecret");
+    String accessToken = System.getenv("accessToken");
+    String tokenSecret = System.getenv("tokenSecret");
+    consumer = new CommonsHttpOAuthConsumer(consumerKey,consumerSecret);
+    consumer.setTokenWithSecret(accessToken,tokenSecret);
+
+    httpClient = new DefaultHttpClient();
+  }
+
   private HttpResponse executeHttpRequest(HttpMethod method, URI uri, StringEntity stringEntity)
       throws OAuthException, IOException {
     if (method == HttpMethod.GET) {
