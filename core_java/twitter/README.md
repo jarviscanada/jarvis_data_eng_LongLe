@@ -10,7 +10,7 @@ This application is developed using multiple technologies and frameworks: OAuthP
 ## Architecture Diagram
 ![TwitterApp UML](./assets/TwitterAppDiagram.png)
 
-![IntelliJ Twitter Diagram] (./assets/InteliJTwitterDiagram.png)
+![IntelliJ Twitter Diagram](./assets/InteliJTwitterDiagram.png)
 
 ## Usage
 - To post a tweet and its coordinates: ``` TwitterApp post [tweet text] [longitude: latitude] ```
