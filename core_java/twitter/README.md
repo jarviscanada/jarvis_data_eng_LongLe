@@ -9,6 +9,7 @@ This application is developed using multiple technologies and frameworks: OAuthP
 
 ## Architecture Diagram
 ![TwitterApp UML](./assets/TwitterAppDiagram.png)
+
 ![IntelliJ Twitter Diagram] (./assets/InteliJTwitterDiagram.png)
 
 ## Usage
