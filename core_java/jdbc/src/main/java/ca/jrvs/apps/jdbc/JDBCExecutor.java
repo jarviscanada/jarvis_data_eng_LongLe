@@ -1,10 +1,7 @@
 package ca.jrvs.apps.jdbc;
 
 import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-import sun.util.resources.cldr.so.CurrencyNames_so;
 
 public class JDBCExecutor {
 
