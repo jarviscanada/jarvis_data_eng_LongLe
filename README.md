@@ -1,6 +1,6 @@
 # Hoang Long Le . Jarvis Consulting
 
-I graduated with a Computer Science Technology DEC (a 3-year college diploma in Montreal) in Vanier College. I'm originally an international student from Vietnam, coming to Montreal for College. Like many other computer science students, I have had a lot of passion about video games since I were young. I have also been really curious in learning about how things work and interact with each other. Moreover, I really loves math. Nothing can describe the satisfaction when you are stuck on a problem for hours, and suddenly, you understand the solution and are able to solve it. Maybe this is the reason why I decided to pursue a degree in Computer Science.
+Since I was young, I have always been fascinated in learning about how things work and interact with each others. I love science (physics,chemistry, biology, math, etc) in general. But like many other people, I also love playing video games, so I was very interested in Coding. I decided move halfway across the world, from Vietnam to Canada, to pursue a DEC (Diplôme d'études collégiales - Diploma of College Studies) in Computer Science Technology at Vanier College in Montreal, Quecbec. I'm passionate in learning new technology, and solving logical problems. Nothing can describe the satisfaction when you are stuck on a problem for hours, and suddenly, you understand the solution and are able to solve it. Maybe this is the reason why I love Computer Science. Currently, I'm also interested in learning about Machine Learning, Cloud Computing/Platform, and AI. I would love to learn more about them if I have the chance to.
 
 ## Skills
 
@@ -8,7 +8,7 @@ I graduated with a Computer Science Technology DEC (a 3-year college diploma in 
 
 **Competent:** PHP, C#, Python, Docker, Maven
 
-**Familiar:** Python, Scala, React, Vue, Spark
+**Familiar:** Python, SpringBoot, Google Cloud, React, Spark
 
 ## Jarvis Projects
 
@@ -19,30 +19,23 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_LongLe](ht
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_LongLe/tree/master/core_java)]:
       
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
+  - Developed three core Java applications that help me acquire knowledge about new Frameworks and technologies
+  - Twitter App: Created an application that utilizes Twitter REST API to make HTTP requests. The app allows user to post a tweet with coordinate, show a tweet using its ID, or delete multiple tweets by inputting multiple tweet IDs.
+  - JDBC App: Developed an application as a training program to get used to JDBC. As a developer, understanding DAO (Data Access Object), DTO (Data Transfer Object), and Repository design, as well as some advanced JDBC concepts is a must
+  - Grep App: Designed an application that imitates the command 'grep' in Linux. The app searches for a text pattern recursively in a given directory, and outputs matched lines to a file
 
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_LongLe/tree/master/springboot)]: Not Started
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_LongLe/tree/master/python_data_anlytics)]: Not Started
-
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_LongLe/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_LongLe/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_LongLe/tree/master/cloud_devops)]: Not Started
+**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_LongLe/tree/master/springboot)]: Developed an application that simulates a stock trading platforms. This app utilizes REST API to allow users to sell/buy a stock, and withdraw/deposit fund into the user's account. The users accounts information are stored in a PostgreSQL database.
 
 
 ## Highlighted Projects
-**Web app for resturant** [[GitHub](https://github.com/jarviscanada/jarvis_profile_builder)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Web app for restaurant**: Designed and coded an application with a classmate as a final project for an E-Commerce class in college. I was responsible for the front end, some back end feature, and database developer. The application stores all products, users information in a database using SQLite. The front end is created using HTML, CSS, Javascript and Bootstrap. The app can also make HTTP requests using XAMPP.
 
-**Machine Learning**: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Crime Location App**: Designed an application that display locations where crimes happened in the current week, current month, or current year in a radius of 200 meters, 1 km or the entire Montreal. I used the csv file that contains crime information on the Government of Quebec website, set up a script that automatically update that file everyday, and store the information in a list of objects. This application uses Google Map API to set up pointers based on the filters that the user chooses.
 
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2020-present)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Software Developer, Jarvis (2020-present)**:  Trained and learned technical skills that are required to become a software developer. Adapted to working in a new professional environment and collaborated with teams using Agile methodology. Developed several projects that required the ability to learn new technologies and frameworks in a short amount of time. Worked as a team leader to ensure the progress and success of the team by fulfilling project requirements and deadline.
 
 
 ## Education
@@ -51,4 +44,4 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_LongLe](ht
 
 ## Miscellaneous
 - Professional Swimmer in 2008
-- Volunteer, Vietnam Hagiang 2017: Helping poor people in mountainous area in Ha Giang, Vietnam
+- Volunteer, Vietnam - Ha Giang 2017: Helping poor people in mountainous area in Ha Giang, Vietnam
