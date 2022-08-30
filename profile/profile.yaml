@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Preferred name (Characters only)
 name: "Hoang Long Le"
 # Your GitHub repo root URL
@@ -102,3 +103,98 @@ others:
     bullets:
       - "Professional Swimmer in 2008"
       - "Volunteer, Vietnam Hagiang 2017: Helping poor people in mountainous area in Ha Giang, Vietnam"
+=======
+# Preferred name (Characters only)
+name: "Hoang Long Le"
+# Your GitHub repo root URL
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_LongLe
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary:  Since I was young, I have always been fascinated in learning about how things work and interact with each others. I love science (physics,chemistry, biology, math, etc) in general. But like many other people, I also love playing video games, so I was very interested in Coding. I decided move halfway across the world, from Vietnam to Canada, to pursue a DEC (Diplôme d'études collégiales - Diploma of College Studies) in Computer Science Technology at Vanier College in Montreal, Quecbec. I'm passionate in learning new technology, and solving logical problems. Nothing can describe the satisfaction when you are stuck on a problem for hours, and suddenly, you understand the solution and are able to solve it. Maybe this is the reason why I love Computer Science. Currently, I'm also interested in learning about Machine Learning, Cloud Computing/Platform, and AI. I would love to learn more about them if I have the chance to.
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - Java
+    - Linux/Bash
+    - RDBMS/SQL
+    - Agile/Scrum
+    - HTML
+    - CSS
+    - Javascript
+    - Oracle
+  # At least 5 skills
+  competent:
+    - PHP
+    - C#
+    - Python
+    - Docker
+    - Maven
+  # At least 5 skills
+  familiar:
+    - Python
+    - SpringBoot
+    - Google Cloud
+    - React
+    - Spark
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Developed 2 SQL queries to create tables in the database (if they haven't exist yet) and inserted some sample values to test them. Then I coded 3 bash scripts. Two bash scripts are able to capture system hardware specifications, and resource usage into the database.  The other bash script is used to create a PostgreSQL database docker container.
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description:
+      - "Developed three core Java applications that help me acquire knowledge about new Frameworks and technologies"
+      - "Twitter App: Created an application that utilizes Twitter REST API to make HTTP requests. The app allows user to post a tweet with coordinate, show a tweet using its ID, or delete multiple tweets by inputting multiple tweet IDs."
+      - "JDBC App: Developed an application as a training program to get used to JDBC. As a developer, understanding DAO (Data Access Object), DTO (Data Transfer Object), and Repository design, as well as some advanced JDBC concepts is a must"
+      - "Grep App: Designed an application that imitates the command 'grep' in Linux. The app searches for a text pattern recursively in a given directory, and outputs matched lines to a file"
+  - name: "Springboot App"
+    git_url: "/springboot"
+    description: "Developed an application that simulates a stock trading platforms. This app utilizes REST API to allow users to sell/buy a stock, and withdraw/deposit fund into the user's account. The users accounts information are stored in a PostgreSQL database."
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+  #project name
+  - name: "Web app for restaurant"
+    #URL is optional
+    # git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Designed and coded an application with a classmate as a final project for an E-Commerce class in college. I was responsible for the front end, some back end feature, and database developer. The application stores all products, users information in a database using SQLite. The front end is created using HTML, CSS, Javascript and Bootstrap. The app can also make HTTP requests using XAMPP.
+  - name: "Crime Location App"
+    # git_url:
+    description: Designed an application that display locations where crimes happened in the current week, current month, or current year in a radius of 200 meters, 1 km or the entire Montreal. I used the csv file that contains crime information on the Government of Quebec website, set up a script that automatically update that file everyday, and store the information in a list of objects. This application uses Google Map API to set up pointers based on the filters that the user chooses.
+
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Software Developer"
+    company: "Jarvis"
+    duration: "2020-present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: " Trained and learned technical skills that are required to become a software developer. Adapted to working in a new professional environment and collaborated with teams using Agile methodology. Developed several projects that required the ability to learn new technologies and frameworks in a short amount of time. Worked as a team leader to ensure the progress and success of the team by fulfilling project requirements and deadline."
+
+#List of education
+education:
+  - school_name: "Vanier College"
+    duration: "2018-2021"
+    degree: "Diplôme d'études collégiales - Diploma of College Studies"
+    department: "Computer Science Technology"
+    awards_achievements:
+
+#Optional section
+others:
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Professional Swimmer in 2008"
+      - "Volunteer, Vietnam - Ha Giang 2017: Helping poor people in mountainous area in Ha Giang, Vietnam"
+>>>>>>> feature/profile
