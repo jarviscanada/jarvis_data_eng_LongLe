@@ -1,4 +1,4 @@
-package ca.jrvs.app.trading.dao;
+package ca.jrvs.apps.trading.dao;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

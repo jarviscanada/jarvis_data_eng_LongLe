@@ -39,25 +39,25 @@ public class QuoteController {
     }
   }
 
-//  @PutMapping(path = "/iexMarketData")
-//  @ResponseStatus(HttpStatus.OK)
-//  public void updateMarketData() {
-//    try {
-//      quoteService.updateMarketData();
-//    } catch (Exception e) {
-//      throw ResponseExceptionUtil.getResponseStatusException(e);
-//    }
-//  }
-//
-//  @PostMapping(path = "/tickerID/{tickerId}")
-//  @ResponseStatus(HttpStatus.CREATED)
-//  @ResponseBody
-//  public Quote createQuote(@PathVariable String tickerId) {
-//    try {
-//      return quoteService.saveQuote(tickerId);
-//    } catch (Exception e) {
-//      throw ResponseExceptionUtil.getResponseStatusException(e);
-//    }
+  @PutMapping(path = "/iexMarketData")
+  @ResponseStatus(HttpStatus.OK)
+  public void updateMarketData() {
+    try {
+      quoteService.updateMarketData();
+    } catch (Exception e) {
+      throw ResponseExceptionUtil.getResponseStatusException(e);
+    }
+  }
+
+  @PostMapping(path = "/tickerID/{tickerId}")
+  @ResponseStatus(HttpStatus.CREATED)
+  @ResponseBody
+  public Quote createQuote(@PathVariable String tickerId) {
+    try {
+      return quoteService.saveQuote(tickerId);
+    } catch (Exception e) {
+      throw ResponseExceptionUtil.getResponseStatusException(e);
+    }
   }
 
   @GetMapping(path = "/dailyList")
