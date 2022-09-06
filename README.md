@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Hoang Long Le . Jarvis Consulting
 
 Since I was young, I have always been fascinated in learning about how things work and interact with each others. I love science (physics,chemistry, biology, math, etc) in general. But like many other people, I also love playing video games, so I was very interested in Coding. I decided move halfway across the world, from Vietnam to Canada, to pursue a DEC (Diplôme d'études collégiales - Diploma of College Studies) in Computer Science Technology at Vanier College in Montreal, Quecbec. I'm passionate in learning new technology, and solving logical problems. Nothing can describe the satisfaction when you are stuck on a problem for hours, and suddenly, you understand the solution and are able to solve it. Maybe this is the reason why I love Computer Science. Currently, I'm also interested in learning about Machine Learning, Cloud Computing/Platform, and AI. I would love to learn more about them if I have the chance to.
@@ -46,4 +45,3 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_LongLe](ht
 ## Miscellaneous
 - Professional Swimmer in 2008
 - Volunteer, Vietnam - Ha Giang 2017: Helping poor people in mountainous area in Ha Giang, Vietnam
->>>>>>> feature/profile
